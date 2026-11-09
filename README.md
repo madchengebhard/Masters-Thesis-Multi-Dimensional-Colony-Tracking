@@ -5,7 +5,7 @@
 **Collaborators:** Mädchen Gebhard
 
 # Folders
-Site Map
+## **Site Map**
 
 #Preliminary Work
 **Site Map:** Script files and data files for a preliminary study analyzing Degree Heating Weeks (DHW) and making site maps for the subset of TCRMP sites used in this study.
