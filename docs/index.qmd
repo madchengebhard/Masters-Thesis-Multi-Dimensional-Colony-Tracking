@@ -1,0 +1,182 @@
+---
+title: "Site Maps"
+author: Mädchen Gebhard
+date: today
+format: 
+  html:
+    theme: sandstone
+    toc: true
+    number-sections:  true
+    code-fold: show
+    embed-resources: true
+    bibliography: references.bib
+---
+
+```{r}
+#| label: setup
+#| message: false
+#| warning: false
+#| echo: fenced
+    
+
+library(tidyverse)
+library(knitr)
+library(readxl)
+library(dplyr)
+
+
+Site_Metadata <- read.csv("~/Library/CloudStorage/OneDrive-UniversityoftheVirginIslands/THESIS/coding_data/exports/Demo_Metadata.csv")
+Demo_Metadata <- read.csv("~/Library/CloudStorage/OneDrive-UniversityoftheVirginIslands/THESIS/coding_data/exports/Site_Metadata.csv") 
+
+```
+
+# **Site Map for Mädchen Gebhard's Thesis: A subset of Shallow and Mesophotic coral reefs from the Territorial Coral Reef Monitoring Program**
+
+##### Data is available from @hollander2025 and the Territorial Coral Reef Monitoring Program. 
+
+```{r}
+#| echo: false
+#| out-width: "80%"
+#| fig-cap: "Colored map of the U.S. Virgin Islands. Mesophotic points shown in purple and shallow points shown in green. Top panel shows St. Thomas and St. John. Bottom panel shows St. Croix with an excerpt map of the Caribbean Sea."
+
+knitr::include_graphics(path.expand("~/Library/CloudStorage/OneDrive-UniversityoftheVirginIslands/THESIS/coding_data/images/horizontal_map.png"))
+```
+
+# Degree Heating Week's (DHW) per Site
+
+::::: panel-tabset
+\*opening fence with panel-tabset option
+
+## Shallow Sites
+
+::: panel-tabset
+### Black Point
+
+```{r}
+#| echo: false
+#| out-width: "80%"
+#| fig-cap: "*Black Point*, left-most green pin, is a shallow site (9 m) with an average coral richness of 13 species and an average abundance of 101 corals."
+
+knitr::include_graphics(path.expand("~/Library/CloudStorage/OneDrive-UniversityoftheVirginIslands/THESIS/coding_data/images/site_specific_map_Black Point.png"))
+```
+
+### Botany Bay
+
+```{r}
+#| echo: false
+#| out-width: "80%"
+#| fig-cap: "*Botany Bay* is a shallow site (8 m) with an average coral richness of 9 species and an average abundance of 42 corals."
+
+knitr::include_graphics(path.expand("~/Library/CloudStorage/OneDrive-UniversityoftheVirginIslands/THESIS/coding_data/images/site_specific_map_Botany Bay.png"))
+
+```
+
+### Brewers Bay
+
+```{r}
+#| echo: false
+#| out-width: "80%"
+#| fig-cap: "*Brewers Bay*, right-most green pin, is a shallow site (6 m) with an average coral richness of 6 species and an average abundance of 30 corals."
+
+knitr::include_graphics(path.expand("~/Library/CloudStorage/OneDrive-UniversityoftheVirginIslands/THESIS/coding_data/images/site_specific_map_Brewers Bay.png"))
+```
+
+### Seahorse Cottage Shoal
+
+```{r}
+#| echo: false
+#| out-width: "80%"
+#| fig-cap: "*Seahorse Cottage Shoal* is a shallow site (20 m) with an average coral richness of 12 species and an average abundance of 81 corals."
+
+knitr::include_graphics(path.expand("~/Library/CloudStorage/OneDrive-UniversityoftheVirginIslands/THESIS/coding_data/images/site_specific_map_Seahorse Cottage Shoal.png"))
+```
+
+### South Capella
+
+```{r}
+#| echo: false
+#| out-width: "80%"
+#| fig-cap: "*South Capella* is a shallow site (20 m) with an average coral richness of 6 species and an average abundance of 18 corals."
+
+knitr::include_graphics(path.expand("~/Library/CloudStorage/OneDrive-UniversityoftheVirginIslands/THESIS/coding_data/images/site_specific_map_South Capella.png"))
+```
+
+### South Water
+
+```{r}
+#| echo: false
+#| out-width: "80%"
+#| fig-cap: "*South Water* is a shallow site (20 m) with an average coral richness of 6 species and an average abundance of 16 corals."
+
+knitr::include_graphics(path.expand("~/Library/CloudStorage/OneDrive-UniversityoftheVirginIslands/THESIS/coding_data/images/site_specific_map_South Water.png"))
+```
+:::
+
+## Mesophotic Sites
+
+::: panel-tabset
+### Buck Island St. Croix Deep
+
+```{r}
+#| echo: false
+#| out-width: "80%"
+#| fig-cap: "*Buck Island St. Croix Deep* is a mesophotic site (33 m) with an average coral richness of 5 species and an average abundance of 15 corals."
+
+knitr::include_graphics(path.expand("~/Library/CloudStorage/OneDrive-UniversityoftheVirginIslands/THESIS/coding_data/images/site_specific_map_Buck Island STX Deep.png"))
+```
+
+### College Shoal East
+
+```{r}
+#| echo: false
+#| out-width: "80%"
+#| fig-cap: "*College Shoal East* is a mesophotic site (30 m) with an average coral richness of 5 species and an average abundance of 20 corals."
+
+knitr::include_graphics(path.expand("~/Library/CloudStorage/OneDrive-UniversityoftheVirginIslands/THESIS/coding_data/images/site_specific_map_College Shoal East.png"))
+```
+
+### Grammanik Tiger FSA
+
+```{r}
+#| echo: false
+#| out-width: "80%"
+#| fig-cap: "*Grammanik Tiger FSA* is a mesophotic site (38 m) with an average coral richness of 5 species and an average abundance of 19 corals."
+
+knitr::include_graphics(path.expand("~/Library/CloudStorage/OneDrive-UniversityoftheVirginIslands/THESIS/coding_data/images/site_specific_map_Grammanik Tiger FSA.png"))
+```
+
+### Hind Bank East FSA
+
+```{r}
+#| echo: false
+#| out-width: "80%"
+#| fig-cap: "*Hind Bank East FSA* is a shallow site (41 m) with an average coral richness of 7 species and an average abundance of 18 corals."
+
+knitr::include_graphics(path.expand("~/Library/CloudStorage/OneDrive-UniversityoftheVirginIslands/THESIS/coding_data/images/site_specific_map_Hind Bank East FSA.png"))
+```
+
+### Lang Bank Red Hind FSA
+
+```{r}
+#| echo: false
+#| out-width: "80%"
+#| fig-cap: "*Lang Bank Red Hind FSA* is a shallow site (33 m) with an average coral richness of 6 species and an average abundance of 18 corals."
+
+knitr::include_graphics(path.expand("~/Library/CloudStorage/OneDrive-UniversityoftheVirginIslands/THESIS/coding_data/images/site_specific_map_Lang Bank Red Hind FSA.png"))
+```
+
+### Meri Shoal
+
+```{r}
+#| echo: false
+#| out-width: "80%"
+#| fig-cap: "*Meri Shoal* is a shallow site (30 m) with an average coral richness of 5 species and an average abundance of 24 corals."
+
+knitr::include_graphics(path.expand("~/Library/CloudStorage/OneDrive-UniversityoftheVirginIslands/THESIS/coding_data/images/site_specific_map_Meri Shoal.png"))
+```
+:::
+:::::
+
+# References
+
+@hollander2025
